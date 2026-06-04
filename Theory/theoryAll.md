@@ -429,7 +429,7 @@ RL позволяет дообучать генеративную модель �
 
 Если сгенерированный ответ получил высокий reward, его вероятность увеличивается. Если reward низкий - уменьшается.
 
-В лекциях также используется идея **Self-Critical Sequence Training (SCST)**: baseline берётся как reward greedy-ответа модели:
+Также для такой задачи можно использовать **Self-Critical Sequence Training (SCST)**: в нём baseline берётся как reward greedy-ответа модели:
 
 ```math
 A = R(sampled\ answer) - R(greedy\ answer)
